@@ -1,0 +1,64 @@
+:root {
+  /* Override react-diff-view colors with Mantine-consistent colors */
+  --diff-background-color: var(--mantine-color-body);
+  --diff-text-color: var(--mantine-color-text);
+  --diff-font-family: var(--mantine-font-family-monospace);
+  --diff-selection-background-color: var(--mantine-color-blue-2);
+  --diff-selection-text-color: var(--mantine-color-text);
+
+  /* Insert (additions) - green tones */
+  --diff-gutter-insert-background-color: var(--mantine-color-green-1);
+  --diff-gutter-insert-text-color: var(--mantine-color-text);
+  --diff-code-insert-background-color: var(--mantine-color-green-0);
+  --diff-code-insert-text-color: var(--mantine-color-text);
+  --diff-code-insert-edit-background-color: var(--mantine-color-green-3);
+  --diff-code-insert-edit-text-color: var(--mantine-color-text);
+
+  /* Delete (removals) - red tones */
+  --diff-gutter-delete-background-color: var(--mantine-color-red-1);
+  --diff-gutter-delete-text-color: var(--mantine-color-text);
+  --diff-code-delete-background-color: var(--mantine-color-red-0);
+  --diff-code-delete-text-color: var(--mantine-color-text);
+  --diff-code-delete-edit-background-color: var(--mantine-color-red-3);
+  --diff-code-delete-edit-text-color: var(--mantine-color-text);
+
+  /* Selected states - yellow tones */
+  --diff-gutter-selected-background-color: var(--mantine-color-yellow-1);
+  --diff-gutter-selected-text-color: var(--mantine-color-text);
+  --diff-code-selected-background-color: var(--mantine-color-yellow-1);
+  --diff-code-selected-text-color: var(--mantine-color-text);
+
+  /* Omit line color */
+  --diff-omit-gutter-line-color: var(--mantine-color-red-6);
+}
+
+/* Additional overrides for dark mode compatibility */
+[data-mantine-color-scheme="dark"] {
+  --diff-background-color: var(--mantine-color-dark-7);
+  --diff-text-color: var(--mantine-color-dark-0);
+
+  /* Adjust colors for dark mode */
+  --diff-gutter-insert-background-color: var(--mantine-color-green-8);
+  --diff-gutter-insert-text-color: var(--mantine-color-dark-0);
+  --diff-code-insert-background-color: var(--mantine-color-green-8);
+  --diff-code-insert-text-color: var(--mantine-color-dark-9);
+  --diff-code-insert-edit-background-color: var(--mantine-color-green-6);
+  --diff-code-insert-edit-text-color: var(--mantine-color-dark-8);
+
+  --diff-gutter-delete-background-color: var(--mantine-color-red-8);
+  --diff-code-delete-background-color: var(--mantine-color-red-7);
+  --diff-code-delete-edit-background-color: var(--mantine-color-red-6);
+
+  --diff-gutter-selected-background-color: var(--mantine-color-yellow-8);
+  --diff-code-selected-background-color: var(--mantine-color-yellow-8);
+
+  --diff-selection-background-color: var(--mantine-color-blue-7);
+}
+
+:global(.diff-viewer-inside) {
+  background-color: var(--mantine-color-dark-8);
+}
+
+:global(.diff-line) * {
+  font-size: 12px !important;
+}

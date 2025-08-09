@@ -1,0 +1,5 @@
+This is a test file for conflict simulation
+Line 2: Original content
+Line 3: This line has CONFLICTING content - BRANCH 1 VERSION
+Line 4: More content here
+Line 5: End of file
