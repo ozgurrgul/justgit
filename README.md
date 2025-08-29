@@ -11,6 +11,13 @@ npm run dev
 
 Note: it's in WIP phase and use it with your own risk. It's being developed for MacOS only but should work in windows/linux as well. PR's welcome!
 
+# TODO
+
+- Settings are not functioning
+- Make diff viewer better
+- Make conflict resolution better
+- ...
+
 ## Screenshots
 ![JustGit Screenshot](screenshots/1.png)
 ![JustGit Screenshot](screenshots/2.png)
